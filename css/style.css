@@ -1,0 +1,159 @@
+:root {
+  --primary: #ffc107;
+  --secondary: #6c757d;
+  --secondary-dark: #343a40;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  position: relative;
+}
+body {
+  font-family: "Maven Pro", serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.2em;
+  margin-top: 2.2rem;
+}
+p {
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+li {
+}
+.fa-code {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.fa-code:hover {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--primary);
+  transition: 0.6s;
+}
+a {
+  text-decoration: none;
+  margin-left: 1.8rem;
+  color: black;
+  /* font-weight: 500; */
+  text-transform: capitalize;
+}
+nav {
+  padding: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-section {
+  max-width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+
+#ws-container {
+  display: block;
+}
+span {
+  color: var(--primary);
+}
+button {
+  margin-top: 2rem;
+  width: 80%;
+  padding: 0.9rem;
+  border-radius: 50px;
+  outline: transparent;
+  border: none;
+  font-size: 0.6em;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-family: "Maven Pro", serif;
+  background-color: rgb(129, 129, 129);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button:hover {
+  transition: 0.3s;
+  background-color: var(--primary);
+}
+a:hover {
+  color: var(--primary);
+  transition: 0.5s;
+}
+li:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+#projects {
+}
+@media (max-width: 800px) {
+  #welcome-section {
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  button {
+    font-size: 0.9rem;
+    width: 15rem;
+    justify-content: space-evenly;
+  }
+  ul {
+    flex-direction: column;
+    position: relative;
+    bottom: -10px;
+    left: -15px;
+  }
+  .sec {
+    position: relative;
+  }
+  #img-section {
+    display: none;
+  }
+}
+#projects {
+}
+section {
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.sec {
+  flex-direction: column;
+}
