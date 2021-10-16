@@ -17,13 +17,11 @@ body {
 }
 h1 {
   font-size: 3rem;
-    text-align: center;
-
+  text-align: center;
 }
 h2 {
   font-size: 2.2em;
-    text-align: center;
-
+  text-align: center;
 }
 img {
   display: block;
@@ -62,6 +60,9 @@ nav {
   align-items: center;
   flex-direction: column;
 }
+.ws-img {
+  display: none;
+}
 span {
   color: var(--primary);
 }
@@ -90,36 +91,28 @@ nav li:hover {
   transform: translateY(-5px);
   transition: 0.3s;
 }
-/* 
+
 @media (max-width: 800px) {
   #welcome-section {
     flex-direction: column;
-
   }
   nav {
-font-size: .625rem;  }
-  button {
-    font-size: 0.9rem;
-    width: 15rem;
-    justify-content: space-evenly;
+    font-size: 1.5rem;
   }
-  
-  .sec {
-
+  .ws_description {
+    padding: 2rem;
   }
- 
-} */
-#projects{
-    text-align: center;
+}
+#projects {
+  text-align: center;
   padding: 10rem 2rem;
-  background:#eee;
+  background: #eee;
 }
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-
 }
-.gridesh{
+.gridesh {
   background-color: #eee;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -128,4 +121,21 @@ font-size: .625rem;  }
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
+}
+.project-tile {
+  border: 1px solide black;
+}
+footer {
+  height: 10rem;
+  /* text-align: center; */
+    font-size: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    font-weight: 600;
+
+
+}
+footer .p {
 }
