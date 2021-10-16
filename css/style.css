@@ -10,48 +10,34 @@
 }
 html {
   scroll-behavior: smooth;
-  position: relative;
 }
 body {
   font-family: "Maven Pro", serif;
   font-size: 1.8rem;
-  font-weight: 400;
 }
 h1 {
   font-size: 3rem;
 }
 h2 {
   font-size: 2.2em;
-  margin-top: 2.2rem;
 }
-p {
-}
+
 ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
 }
-li {
-}
-.fa-code {
-  font-size: 2.5rem;
-  cursor: pointer;
-}
-.fa-code:hover {
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: var(--primary);
-  transition: 0.6s;
-}
-a {
+
+nav a {
   text-decoration: none;
   margin-left: 1.8rem;
   color: black;
-  /* font-weight: 500; */
+  font-weight: 500;
   text-transform: capitalize;
 }
 nav {
-  padding: 1.8rem;
+  height: 10vh;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -59,50 +45,32 @@ nav {
   background-color: white;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 10;
   border-bottom: 1px solid rgb(204, 204, 204);
 }
-.nav-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #welcome-section {
-  max-width: 80%;
   height: 100vh;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 50px;
-}
-
-#ws-container {
-  display: block;
+  flex-direction: column;
 }
 span {
   color: var(--primary);
 }
 button {
   margin-top: 2rem;
-  width: 80%;
-  padding: 0.9rem;
+  padding: 1rem;
   border-radius: 50px;
-  outline: transparent;
+  outline: none;
   border: none;
-  font-size: 0.6em;
+  font-size: 0.7em;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
   color: rgb(255, 255, 255);
   font-family: "Maven Pro", serif;
-  background-color: rgb(129, 129, 129);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  background-color: rgb(168, 168, 168);
 }
-
 button:hover {
   transition: 0.3s;
   background-color: var(--primary);
@@ -115,45 +83,40 @@ li:hover {
   transform: translateY(-5px);
   transition: 0.3s;
 }
-#projects {
-}
+/* 
 @media (max-width: 800px) {
   #welcome-section {
     flex-direction: column;
-    position: relative;
-    top: 100px;
+
   }
   nav {
-    flex-direction: column;
-  }
+font-size: .625rem;  }
   button {
     font-size: 0.9rem;
     width: 15rem;
     justify-content: space-evenly;
   }
-  ul {
-    flex-direction: column;
-    position: relative;
-    bottom: -10px;
-    left: -15px;
-  }
+  
   .sec {
-    position: relative;
+
   }
-  #img-section {
-    display: none;
-  }
+ 
+} */
+#projects{
+  width: 60%;
+
 }
-#projects {
+.gridesh {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project-title{
+  border: 1px solid green;
+  background-color: #eee;
 }
 section {
-  height: 100vh;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+
 }
 .sec {
-  flex-direction: column;
+
 }
