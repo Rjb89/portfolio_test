@@ -17,12 +17,19 @@ body {
 }
 h1 {
   font-size: 3rem;
+    text-align: center;
+
 }
 h2 {
   font-size: 2.2em;
-}
+    text-align: center;
 
-ul {
+}
+img {
+  display: block;
+  width: 100%;
+}
+nav ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -75,11 +82,11 @@ button:hover {
   transition: 0.3s;
   background-color: var(--primary);
 }
-a:hover {
+nav a:hover {
   color: var(--primary);
   transition: 0.5s;
 }
-li:hover {
+nav li:hover {
   transform: translateY(-5px);
   transition: 0.3s;
 }
@@ -103,20 +110,22 @@ font-size: .625rem;  }
  
 } */
 #projects{
-  width: 60%;
+    text-align: center;
+  padding: 10rem 2rem;
+  background:#eee;
+}
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
 
 }
-.gridesh {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.project-title{
-  border: 1px solid green;
+.gridesh{
   background-color: #eee;
-}
-section {
-
-}
-.sec {
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
 }
